@@ -1,0 +1,76 @@
+// pet.rc - 资源定义 (RCDATA PNG)
+// 资源 ID 分配 (匹配 pet.c)
+#include <winuser.h>
+
+// 应用图标
+1 ICON "assets/dino_icon.ico"
+
+// Idle (101-104)
+101 RCDATA "assets/frames_raw/idle_01.dat"
+102 RCDATA "assets/frames_raw/idle_02.dat"
+103 RCDATA "assets/frames_raw/idle_03.dat"
+104 RCDATA "assets/frames_raw/idle_04.dat"
+
+// Idle Word (105-108) - 双循环单词部分
+105 RCDATA "assets/frames_raw/idle_angry.dat"
+106 RCDATA "assets/frames_raw/idle_confused.dat"
+107 RCDATA "assets/frames_raw/idle_shy.dat"
+108 RCDATA "assets/frames_raw/idle_surprise.dat"
+
+// Walk Right (111-114) - 朝右
+111 RCDATA "assets/frames_raw/walk_right_01.dat"
+112 RCDATA "assets/frames_raw/walk_right_02.dat"
+113 RCDATA "assets/frames_raw/walk_right_03.dat"
+114 RCDATA "assets/frames_raw/walk_right_04.dat"
+
+// Walk Left (115-118) - 朝左
+115 RCDATA "assets/frames_raw/walk_left_01.dat"
+116 RCDATA "assets/frames_raw/walk_left_02.dat"
+117 RCDATA "assets/frames_raw/walk_left_03.dat"
+118 RCDATA "assets/frames_raw/walk_left_04.dat"
+
+// Walk Up (119-120) - 背对, 朝上走
+119 RCDATA "assets/frames_raw/walk_up_01.dat"
+120 RCDATA "assets/frames_raw/walk_up_02.dat"
+
+// Walk Down (121-122) - 正脸, 朝下走
+121 RCDATA "assets/frames_raw/walk_down_01.dat"
+122 RCDATA "assets/frames_raw/walk_down_02.dat"
+
+// Expressions (131-138) - 单击切表情池
+131 RCDATA "assets/frames_raw/exp_focus.dat"
+132 RCDATA "assets/frames_raw/exp_happy.dat"
+133 RCDATA "assets/frames_raw/exp_love.dat"
+134 RCDATA "assets/frames_raw/exp_mirror.dat"
+135 RCDATA "assets/frames_raw/exp_nose.dat"
+136 RCDATA "assets/frames_raw/exp_snack.dat"
+137 RCDATA "assets/frames_raw/exp_winter.dat"
+
+// Drag (141-144) - 按被抓住部位分
+141 RCDATA "assets/frames_raw/drag_head.dat"
+142 RCDATA "assets/frames_raw/drag_left.dat"
+143 RCDATA "assets/frames_raw/drag_right.dat"
+144 RCDATA "assets/frames_raw/drag_tail.dat"
+
+// Sign (151-153) - 久坐提醒举牌
+151 RCDATA "assets/frames_raw/sign_01.dat"
+152 RCDATA "assets/frames_raw/sign_02.dat"
+153 RCDATA "assets/frames_raw/sign_03.dat"
+
+// Sleep (161-164) - 回窝睡觉 (Z 飘升 + 气泡)
+161 RCDATA "assets/frames_raw/sleep_01.dat"
+162 RCDATA "assets/frames_raw/sleep_02.dat"
+163 RCDATA "assets/frames_raw/sleep_03.dat"
+164 RCDATA "assets/frames_raw/sleep_04.dat"
+
+165 RCDATA "assets/frames_raw/shake_shock.dat"
+166 RCDATA "assets/frames_raw/dizzy_00.dat"
+167 RCDATA "assets/frames_raw/dizzy_01.dat"
+168 RCDATA "assets/frames_raw/dizzy_02.dat"
+169 RCDATA "assets/frames_raw/dizzy_03.dat"
+170 RCDATA "assets/frames_raw/dizzy_04.dat"
+
+171 RCDATA "assets/frames_raw/typing_left_up.dat"
+172 RCDATA "assets/frames_raw/typing_right_up.dat"
+
+173 RCDATA "assets/frames_raw/roar.dat"

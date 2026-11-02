@@ -1,0 +1,21 @@
+* text=auto
+
+# Windows scripts must be CRLF or cmd.exe misbehaves
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# sources
+*.c   text eol=crlf
+*.rc  text eol=crlf
+*.h   text eol=crlf
+
+# docs stay LF
+*.md  text eol=lf
+*.txt text eol=lf
+
+# binary
+*.dat binary
+*.ico binary
+*.png binary
+*.exe binary

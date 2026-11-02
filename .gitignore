@@ -1,0 +1,16 @@
+# build output
+build/
+*.exe
+*.o
+*.obj
+*.res
+
+# editors / os
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# logs
+*.log
