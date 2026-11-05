@@ -1,0 +1,39 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: build pet.exe (MinGW-w64)
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: MINGW64
+          update: true
+          install: mingw-w64-x86_64-gcc
+
+      - name: compile
+        shell: msys2 {0}
+        run: |
+          cd "$GITHUB_WORKSPACE"
+          ./build.bat
+
+      - name: checksum
+        shell: pwsh
+        run: |
+          $h = (Get-FileHash build\pet.exe -Algorithm SHA256).Hash.ToLower()
+          "$h *pet.exe" | Out-File -Encoding ascii SHA256SUMS.txt
+          Get-Content SHA256SUMS.txt
+          Add-Content $env:GITHUB_STEP_SUMMARY "pet.exe SHA256: $h"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pet-exe
+          path: build/pet.exe
